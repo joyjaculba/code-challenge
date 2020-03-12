@@ -113,7 +113,7 @@
                     weeks.push($(this).val());
                 });
                $.ajax({
-                  url: "{{ url('/events/add') }}",
+                  url: "{{ route('events.add') }}",
                   type: 'POST',
                   data: {
                     _token : $('meta[name="csrf-token"]').attr('content'),
